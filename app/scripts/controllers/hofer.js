@@ -15,12 +15,20 @@ angular.module('testAngularJsApp')
       'Karma'
     ];
 
-    $scope.walidList = [{name:'test55', lastname:'test66'}, {adress:'test77'}];
+    $scope.walidList = [{name:'name1', lastname:'lastname1', adress:'adress1'},
+                        {name:'name2', lastname:'lastname2', adress:'adress2'}
+                        ];
 
     $scope.logToConsol = function(){
-      if($scope.myModel!== undefined && $scope.myModel.length > 0){
-          console.log($scope.myModel);
+      if($scope.myTestModel!== undefined && $scope.myTestModel.length > 0){
+          console.log($scope.myTestModel);
+          // put the input into jason object
+          var myObject = {name:$scope.myTestModel +'manipulated', lastname:'trabelsi'};
+          console.log(myObject.name);
        }
     };
-    console.log($scope.walidList);
+
+   // console.log($scope.walidList);
+
+   //console.log($scope.myTestModel)
   });

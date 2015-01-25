@@ -79,10 +79,10 @@ body {
 
   .myBox{
     background-color: lightgrey;
-    width: 400px;
+    width: 500px;
     padding: 25px;
     border: 5px solid navy;
     margin: 25px;
-    height: 150px;
+    height: 200px;
   }
 }

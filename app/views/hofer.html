@@ -1,21 +1,18 @@
 
-<div>
-
-</div>
 <div class="myBox">
 	<p>This is the hofer view.</p>
 
 	<div ng-controller="HoferCtrl">
-    <input type="text" ng-model="myModel">
+    <input type="text" ng-model="myTestModel">
     <input type="submit" value="DisplayInTheConsol" ng-click="logToConsol()" />
 		<ul>
-      <!--display list-->
+      <!--display the list defined in the controller-->
 			<li ng-repeat="price in walidList">
 				<span>{{price}}</span>
 			</li>
 		</ul>
     <div>
-      <span>{{myModel}}</span>
+      <span>{{myTestModel}}</span>
     </div>
 
 	</div>

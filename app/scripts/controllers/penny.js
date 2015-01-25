@@ -9,4 +9,11 @@ angular.module('testAngularJsApp')
       'AngularJS',
       'Karma'
     ];
+
+    $scope.comboboxModel = [{value:'1', text:'walid'},
+                            {value:'2', text: 'shams'},
+                            {value:'3', text: 'olfa'}
+                           ];
+
+
   });
