@@ -17,14 +17,15 @@ angular.module('testAngularJsApp')
 
     $scope.walidList = [{name:'name1', lastname:'lastname1', adress:'adress1'},
                         {name:'name2', lastname:'lastname2', adress:'adress2'}
-                        ];
+                       ];
 
     $scope.logToConsol = function(){
-      if($scope.myTestModel!== undefined && $scope.myTestModel.length > 0){
-          console.log($scope.myTestModel);
+    var modelValue = $scope.myTestModel;
+      if(modelValue!== undefined && modelValue.length > 0){
+          console.log(modelValue);
           // put the input into jason object
-          var myObject = {name:$scope.myTestModel +'manipulated', lastname:'trabelsi'};
-          console.log(myObject.name);
+          var myObject = {name:modelValue +' --> manipulated', lastname:'trabelsi'};
+          console.log(myObject.name + ' -------- ' + myObject.lastname);
        }
     };
 
